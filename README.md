@@ -5,19 +5,20 @@
 2. [Introducción](#id2)
 3. [Instalación](#id3)
 4. [Conclusiones](#id4)
+5. [Instalación Docker](#id5)
 
 
 ## Resumen <a name="id1"></a>
-En esta guía aprenderás a como crear un contenedor de Docker en el sistema operativo Linux que incluya el servicio Nginx.
+En esta guía aprenderás a como crear un contenedor de Docker en el sistema operativo Linux que incluya el servicio Nginx.\
 Lo que aprenderás:
 *	Como crear una imagen de Docker.
-*	Como incluir el servicio de Nginx sobre un contenedor.\
+*	Como incluir el servicio de Nginx sobre un contenedor.
 
 Lo que necesitarás: 
 *	Un ordenador con conexión a internet y sistema operativo Linux.
 *	Tener instalado Docker.
 
-* Sino tiene instalado Docker por favor revisar la sección Instalación de Docker 
+**Sino tiene instalado Docker por favor revisar la sección Instalación de Docker** 
 ## Introducción <a name="id2"></a>
 
 ### ¿Qué es Docker?
@@ -65,7 +66,23 @@ En nuestro ejemplo:
 * El ID del contenedor es: **4744150be374b84f6c86e1f4c0bba0d34afd1a212f974f8d6d9abaf6575061c0**
 
 
-¡Felicidades! Ha finalizado la instalación de Nginx Docker en Ubuntu Linux.
+**¡Felicidades! Ha finalizado la instalación de Nginx Docker en Ubuntu Linux.**
 
 
 
+## Instalación Docker<a name="id5"></a>
+*	Abrir la terminal de Ubuntu 
+* Eliminar cualquier archivo Docker que se esté ejecutando en el sistema con el siguiente comando:
+``` $sudo apt-get remove docker docker-engine docker.io ```
+*	Verificar si el sistema esta actualizado usando el siguiente comando:
+``` $ sudo apt-get update ```
+![image](https://user-images.githubusercontent.com/62962507/192428318-d2ddef9d-ec60-4344-8350-c8ec365a05bb.png)
+
+* Instale Docker con el siguiente comando:
+``` $ sudo apt install docker.io ```
+*Luego recibirá un mensaje que le pedirá que elija entre “y/n”,escriba 'y' para luego presiona enter*
+![image](https://user-images.githubusercontent.com/62962507/192428466-8eb04209-b322-4679-b04a-b0abaf9fdd59.png)
+
+* Antes de probar Docker, verifique la versión instalada usando el siguiente comando:
+``` $ sudo docker version ```
+![image](https://user-images.githubusercontent.com/62962507/192428574-5c5a1bd9-261e-4a7b-b6ad-7069518be986.png)
